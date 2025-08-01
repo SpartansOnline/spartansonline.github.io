@@ -35,6 +35,25 @@ scene2.on("progress", function(e) {
     text.style.opacity = 1 - e.progress;
 });
 
+
+//image animation
+const scrollImg = document.querySelector('.scroll-img');
+
+let imgScene = new ScrollMagic.Scene({
+    duration: 2000,
+    triggerElement: intro,
+    triggerHook: 0
+})
+.addTo(controller);
+
+imgScene.on("progress", function(e) {
+    TweenMax.to(scrollImg, 0, {
+        x: -window.innerWidth * e.progress,
+    });
+});
+
+
+
 //video animation
 let accelamount = 0.5;
 let scrollpos = 0;
