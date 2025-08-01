@@ -7,6 +7,8 @@
 body {
     background-color: black;
     font-family: sans-serif;
+    cursor: url('cursor.png'), auto;  /* Custom cursor */
+    
 }
 
 body{
@@ -95,7 +97,7 @@ section h1{
 .navbar a {
     color: #fff;
     text-decoration: none;
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
     padding: 20px 30px;
     display: block;
     transition: color 0.2s;
@@ -104,11 +106,13 @@ section h1{
     position: relative;
     font-family: inherit;
     font-weight: 600; /* Demi bold */
+
+
 }
 
 .navbar a::first-letter {
-    font-size: 1.7em;
-    vertical-align: -0.05em; /* Adjust vertical alignment */
+    font-size: 1.5em;
+    vertical-align: -0.0em; /* Adjust vertical alignment */
     font-weight: 600; /* Ensure first letter is also demi bold */
 }
 

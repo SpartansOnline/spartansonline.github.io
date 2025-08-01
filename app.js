@@ -12,7 +12,7 @@ const controller = new ScrollMagic.Controller();
 
 //Scenes
 let scene = new ScrollMagic.Scene({
-    duration: 2000,
+    duration: 3000,
     triggerElement: intro,
     triggerHook: 0
 })
@@ -25,7 +25,7 @@ let scene = new ScrollMagic.Scene({
 
 
 let scene2 = new ScrollMagic.Scene({
-    duration: 2000,
+    duration: 3000,
     triggerElement: intro,
     triggerHook: 0
 })
@@ -40,7 +40,7 @@ scene2.on("progress", function(e) {
 const scrollImg = document.querySelector('.scroll-img');
 
 let imgScene = new ScrollMagic.Scene({
-    duration: 2000,
+    duration: 3000,
     triggerElement: intro,
     triggerHook: 0
 })
